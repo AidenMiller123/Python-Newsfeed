@@ -7,12 +7,13 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: navy;
+  background-color: beige;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #337cd4;
   font-weight: bold;
   transition: color .1s;
 }
@@ -76,15 +77,25 @@ form label {
 
 header {
   border-bottom: 1px solid #ccc;
+  background-color:#20368F;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  border-radius: 10px 40px;
 }
 
-header h1 {
-  font-size: 1em;
+header h1 a{
+  font-size: 35px;
+  color: beige;
+  margin-left: 20px;
 }
+
+header nav a{
+  color: beige;
+  font-size: 18px;
+}
+
 
 main {
   flex: 1;
@@ -97,8 +108,8 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
+  color: beige;
+  font-size: 18px;
   font-weight: bold;
   transition: color .1s;
   margin-left: 16px;
@@ -118,8 +129,12 @@ main {
 }
 
 .post {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   line-height: 150%;
+}
+
+.post .title a {
+  font-size: 20px;
 }
 
 .post .title span {
@@ -131,6 +146,7 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  font-size: 15px;
 }
 
 .upvote-btn {
@@ -152,7 +168,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #dad8d7;
 }
 
 .comment .meta {
@@ -169,10 +185,78 @@ main {
   margin-bottom: 5%;
 }
 
+.login-signup{
+  display: flex;
+  gap: 250px;
+}
+
+.login-form label {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#email-login {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 350px;
+}
+
+#password-login {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 350px;
+}
+
+.signup-form label {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#username-signup {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 350px;
+}
+
+#email-signup {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 350px;
+}
+
+#password-signup {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 350px;
+}
+
+.login-signup button {
+  width: 120px;
+  height: 35px;
+}
+
+.login-title{
+  margin-bottom: 35px;
+}
+
+.signup-title {
+  margin-bottom: 35px;
+}
+
+.login-button{
+  margin-right: 15px;
+  font-size: 20px;
+}
+
 footer {
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
   padding: 1%;
-  font-size: 110%;
+  font-size: 130%;
+  background-color: #20368F;
+  color: beige;
+  border-radius: 30px;
 }
